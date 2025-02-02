@@ -86,9 +86,10 @@
             // Topic_HomeManagement
             // 
             Topic_HomeManagement.AutoSize = true;
-            Topic_HomeManagement.Location = new Point(33, 49);
+            Topic_HomeManagement.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Topic_HomeManagement.Location = new Point(0, 49);
             Topic_HomeManagement.Name = "Topic_HomeManagement";
-            Topic_HomeManagement.Size = new Size(197, 20);
+            Topic_HomeManagement.Size = new Size(281, 28);
             Topic_HomeManagement.TabIndex = 12;
             Topic_HomeManagement.Text = "Library Management System";
             // 

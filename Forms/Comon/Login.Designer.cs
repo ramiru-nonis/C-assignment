@@ -46,48 +46,53 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(350, 49);
+            label1.Location = new Point(334, 41);
             label1.Name = "label1";
-            label1.Size = new Size(151, 29);
+            label1.Size = new Size(208, 41);
             label1.TabIndex = 0;
             label1.Text = "Library login ";
             label1.Click += label1_Click;
             // 
             // Login_btn_login
             // 
-            Login_btn_login.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Login_btn_login.Location = new Point(321, 377);
+            Login_btn_login.BackColor = Color.DarkSlateBlue;
+            Login_btn_login.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Login_btn_login.ForeColor = Color.White;
+            Login_btn_login.Location = new Point(334, 418);
             Login_btn_login.Margin = new Padding(2);
             Login_btn_login.Name = "Login_btn_login";
             Login_btn_login.Size = new Size(148, 51);
             Login_btn_login.TabIndex = 1;
             Login_btn_login.Text = "Login";
+            Login_btn_login.UseVisualStyleBackColor = false;
             Login_btn_login.Click += Login_btn_login_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(235, 129);
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(191, 123);
             label2.Name = "label2";
-            label2.Size = new Size(79, 16);
+            label2.Size = new Size(139, 31);
             label2.TabIndex = 2;
             label2.Text = "UserName :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(235, 188);
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.Location = new Point(191, 187);
             label3.Name = "label3";
-            label3.Size = new Size(73, 16);
+            label3.Size = new Size(128, 31);
             label3.TabIndex = 3;
             label3.Text = "Password :";
             label3.Click += label3_Click;
             // 
             // Password_text_login
             // 
-            Password_text_login.Location = new Point(336, 188);
+            Password_text_login.Location = new Point(334, 196);
             Password_text_login.Name = "Password_text_login";
             Password_text_login.PasswordChar = '*';
             Password_text_login.Size = new Size(206, 22);
@@ -103,14 +108,16 @@
             // 
             // rejister_btn_login
             // 
-            rejister_btn_login.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rejister_btn_login.Location = new Point(34, 445);
+            rejister_btn_login.BackColor = Color.DarkSlateBlue;
+            rejister_btn_login.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            rejister_btn_login.ForeColor = Color.White;
+            rejister_btn_login.Location = new Point(30, 499);
             rejister_btn_login.Margin = new Padding(2);
             rejister_btn_login.Name = "rejister_btn_login";
             rejister_btn_login.Size = new Size(216, 35);
             rejister_btn_login.TabIndex = 6;
             rejister_btn_login.Text = "Create an account";
-            rejister_btn_login.UseVisualStyleBackColor = true;
+            rejister_btn_login.UseVisualStyleBackColor = false;
             rejister_btn_login.Click += rejister_btn_login_Click;
             // 
             // label4
@@ -124,20 +131,21 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Black;
             label5.Location = new Point(297, 286);
             label5.Name = "label5";
-            label5.Size = new Size(218, 29);
+            label5.Size = new Size(288, 41);
             label5.TabIndex = 9;
             label5.Text = "What is your Role ?";
             // 
             // Admin_radio_login
             // 
             Admin_radio_login.AutoSize = true;
-            Admin_radio_login.Location = new Point(95, 336);
+            Admin_radio_login.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Admin_radio_login.Location = new Point(86, 345);
             Admin_radio_login.Name = "Admin_radio_login";
-            Admin_radio_login.Size = new Size(66, 20);
+            Admin_radio_login.Size = new Size(107, 35);
             Admin_radio_login.TabIndex = 10;
             Admin_radio_login.TabStop = true;
             Admin_radio_login.Text = "Admin";
@@ -146,9 +154,10 @@
             // Librarian_radio_login
             // 
             Librarian_radio_login.AutoSize = true;
-            Librarian_radio_login.Location = new Point(355, 336);
+            Librarian_radio_login.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Librarian_radio_login.Location = new Point(347, 347);
             Librarian_radio_login.Name = "Librarian_radio_login";
-            Librarian_radio_login.Size = new Size(80, 20);
+            Librarian_radio_login.Size = new Size(135, 35);
             Librarian_radio_login.TabIndex = 11;
             Librarian_radio_login.TabStop = true;
             Librarian_radio_login.Text = "Librarian";
@@ -157,9 +166,10 @@
             // Student_radio_login
             // 
             Student_radio_login.AutoSize = true;
-            Student_radio_login.Location = new Point(632, 336);
+            Student_radio_login.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Student_radio_login.Location = new Point(628, 347);
             Student_radio_login.Name = "Student_radio_login";
-            Student_radio_login.Size = new Size(73, 20);
+            Student_radio_login.Size = new Size(119, 35);
             Student_radio_login.TabIndex = 12;
             Student_radio_login.TabStop = true;
             Student_radio_login.Text = "Student";
@@ -168,9 +178,10 @@
             // ShowPass_check
             // 
             ShowPass_check.AutoSize = true;
+            ShowPass_check.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             ShowPass_check.Location = new Point(447, 229);
             ShowPass_check.Name = "ShowPass_check";
-            ShowPass_check.Size = new Size(125, 20);
+            ShowPass_check.Size = new Size(182, 32);
             ShowPass_check.TabIndex = 13;
             ShowPass_check.Text = "Show Password";
             ShowPass_check.UseVisualStyleBackColor = true;
@@ -180,8 +191,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.GhostWhite;
-            ClientSize = new Size(800, 491);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(826, 545);
             Controls.Add(ShowPass_check);
             Controls.Add(Student_radio_login);
             Controls.Add(Librarian_radio_login);

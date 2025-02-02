@@ -49,16 +49,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(428, 45);
             label1.Name = "label1";
-            label1.Size = new Size(214, 29);
+            label1.Size = new Size(283, 41);
             label1.TabIndex = 29;
             label1.Text = "View Book Details ";
             // 
             // book_picture_viewBook
             // 
+            book_picture_viewBook.BackColor = Color.White;
             book_picture_viewBook.Location = new Point(51, 119);
             book_picture_viewBook.Name = "book_picture_viewBook";
             book_picture_viewBook.Size = new Size(335, 426);
@@ -84,18 +85,20 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.Location = new Point(488, 213);
             label5.Name = "label5";
-            label5.Size = new Size(105, 20);
+            label5.Size = new Size(172, 31);
             label5.TabIndex = 46;
             label5.Text = "Author Name :";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(488, 318);
             label4.Name = "label4";
-            label4.Size = new Size(44, 20);
+            label4.Size = new Size(75, 31);
             label4.TabIndex = 45;
             label4.Text = "Year :";
             // 
@@ -110,9 +113,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.Location = new Point(488, 119);
             label2.Name = "label2";
-            label2.Size = new Size(88, 20);
+            label2.Size = new Size(144, 31);
             label2.TabIndex = 43;
             label2.Text = "Book Tittle :";
             // 
@@ -127,59 +131,70 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(491, 443);
             label8.Name = "label8";
-            label8.Size = new Size(44, 20);
+            label8.Size = new Size(72, 31);
             label8.TabIndex = 50;
             label8.Text = "ISBN:";
             // 
             // borrowBtn
             // 
+            borrowBtn.BackColor = Color.DarkSlateBlue;
+            borrowBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            borrowBtn.ForeColor = Color.White;
             borrowBtn.Location = new Point(912, 172);
             borrowBtn.Name = "borrowBtn";
-            borrowBtn.Size = new Size(94, 29);
+            borrowBtn.Size = new Size(94, 39);
             borrowBtn.TabIndex = 52;
             borrowBtn.Text = "Borrow";
-            borrowBtn.UseVisualStyleBackColor = true;
+            borrowBtn.UseVisualStyleBackColor = false;
             borrowBtn.Click += borrowBtn_Click;
             // 
             // reserveBtn
             // 
+            reserveBtn.BackColor = Color.DarkSlateBlue;
+            reserveBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            reserveBtn.ForeColor = Color.White;
             reserveBtn.Location = new Point(912, 283);
             reserveBtn.Name = "reserveBtn";
-            reserveBtn.Size = new Size(94, 29);
+            reserveBtn.Size = new Size(94, 37);
             reserveBtn.TabIndex = 53;
             reserveBtn.Text = "Reserve";
-            reserveBtn.UseVisualStyleBackColor = true;
+            reserveBtn.UseVisualStyleBackColor = false;
             reserveBtn.Click += reserveBtn_Click;
             // 
             // back_btn_bookDetails
             // 
+            back_btn_bookDetails.BackColor = Color.DarkSlateBlue;
+            back_btn_bookDetails.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            back_btn_bookDetails.ForeColor = Color.White;
             back_btn_bookDetails.Location = new Point(23, 38);
             back_btn_bookDetails.Name = "back_btn_bookDetails";
-            back_btn_bookDetails.Size = new Size(94, 29);
+            back_btn_bookDetails.Size = new Size(94, 39);
             back_btn_bookDetails.TabIndex = 54;
             back_btn_bookDetails.Text = "back";
-            back_btn_bookDetails.UseVisualStyleBackColor = true;
+            back_btn_bookDetails.UseVisualStyleBackColor = false;
             back_btn_bookDetails.Click += back_btn_bookDetails_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(491, 552);
+            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.Location = new Point(491, 559);
             label3.Name = "label3";
-            label3.Size = new Size(104, 20);
+            label3.Size = new Size(216, 38);
             label3.TabIndex = 55;
             label3.Text = "Current Status:";
             // 
             // status_text
             // 
             status_text.AutoSize = true;
-            status_text.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            status_text.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             status_text.ForeColor = Color.Black;
-            status_text.Location = new Point(610, 547);
+            status_text.Location = new Point(713, 564);
             status_text.Name = "status_text";
-            status_text.Size = new Size(128, 25);
+            status_text.Size = new Size(163, 31);
             status_text.TabIndex = 56;
             status_text.Text = "Not Available";
             // 
@@ -187,6 +202,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MediumSlateBlue;
             ClientSize = new Size(1194, 775);
             Controls.Add(status_text);
             Controls.Add(label3);

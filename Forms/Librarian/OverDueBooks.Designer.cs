@@ -39,6 +39,7 @@
             // 
             // dataGridViewOverDueBooks
             // 
+            dataGridViewOverDueBooks.BackgroundColor = Color.White;
             dataGridViewOverDueBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewOverDueBooks.Location = new Point(12, 67);
             dataGridViewOverDueBooks.Margin = new Padding(3, 4, 3, 4);
@@ -52,30 +53,34 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(470, 25);
             label1.Name = "label1";
-            label1.Size = new Size(186, 29);
+            label1.Size = new Size(236, 41);
             label1.TabIndex = 24;
             label1.Text = "Over due Books";
             // 
             // update
             // 
+            update.BackColor = Color.DarkSlateBlue;
+            update.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            update.ForeColor = Color.White;
             update.Location = new Point(441, 604);
             update.Name = "update";
-            update.Size = new Size(201, 29);
+            update.Size = new Size(201, 39);
             update.TabIndex = 42;
             update.Text = "Update OverDue";
-            update.UseVisualStyleBackColor = true;
+            update.UseVisualStyleBackColor = false;
             update.Click += update_Click;
             // 
             // NotpaidRadio_l
             // 
             NotpaidRadio_l.AutoSize = true;
-            NotpaidRadio_l.Location = new Point(263, 546);
+            NotpaidRadio_l.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            NotpaidRadio_l.Location = new Point(304, 557);
             NotpaidRadio_l.Name = "NotpaidRadio_l";
-            NotpaidRadio_l.Size = new Size(87, 24);
+            NotpaidRadio_l.Size = new Size(130, 35);
             NotpaidRadio_l.TabIndex = 53;
             NotpaidRadio_l.TabStop = true;
             NotpaidRadio_l.Text = "Not Paid";
@@ -84,9 +89,10 @@
             // paidRadio_l
             // 
             paidRadio_l.AutoSize = true;
-            paidRadio_l.Location = new Point(263, 507);
+            paidRadio_l.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            paidRadio_l.Location = new Point(304, 507);
             paidRadio_l.Name = "paidRadio_l";
-            paidRadio_l.Size = new Size(58, 24);
+            paidRadio_l.Size = new Size(84, 35);
             paidRadio_l.TabIndex = 52;
             paidRadio_l.TabStop = true;
             paidRadio_l.Text = "Paid";
@@ -95,9 +101,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.Location = new Point(182, 507);
             label2.Name = "label2";
-            label2.Size = new Size(56, 20);
+            label2.Size = new Size(94, 31);
             label2.TabIndex = 51;
             label2.Text = "Status :";
             // 
@@ -105,6 +112,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MediumSlateBlue;
             ClientSize = new Size(1130, 655);
             Controls.Add(NotpaidRadio_l);
             Controls.Add(paidRadio_l);

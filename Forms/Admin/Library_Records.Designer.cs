@@ -62,7 +62,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(277, 679);
+            panel1.Size = new Size(277, 744);
             panel1.TabIndex = 1;
             // 
             // libraryRecords_UserMAnagement
@@ -80,11 +80,13 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(33, 49);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(0, 49);
             label2.Name = "label2";
-            label2.Size = new Size(197, 20);
+            label2.Size = new Size(281, 28);
             label2.TabIndex = 12;
             label2.Text = "Library Management System";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -167,36 +169,40 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(380, 36);
             label4.Name = "label4";
-            label4.Size = new Size(123, 20);
+            label4.Size = new Size(260, 41);
             label4.TabIndex = 5;
             label4.Text = "Most Active User:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(888, 36);
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(863, 32);
             label6.Name = "label6";
-            label6.Size = new Size(152, 20);
+            label6.Size = new Size(313, 41);
             label6.TabIndex = 6;
             label6.Text = "Most Borrowed book:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(478, 130);
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label8.Location = new Point(431, 121);
             label8.Name = "label8";
-            label8.Size = new Size(84, 20);
+            label8.Size = new Size(136, 31);
             label8.TabIndex = 8;
             label8.Text = "Borrowings";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(974, 130);
+            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label9.Location = new Point(956, 121);
             label9.Name = "label9";
-            label9.Size = new Size(92, 20);
+            label9.Size = new Size(151, 31);
             label9.TabIndex = 9;
             label9.Text = "Reservations";
             // 
@@ -205,7 +211,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
-            ClientSize = new Size(1313, 679);
+            ClientSize = new Size(1408, 744);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label6);

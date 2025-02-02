@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashBoard));
             panel1 = new Panel();
+            OverDue_btn_HomeManagement = new Button();
             User_btn_HomeManagement = new Button();
             label1 = new Label();
             label5 = new Label();
@@ -48,7 +49,6 @@
             dataGridView2 = new DataGridView();
             label9 = new Label();
             label10 = new Label();
-            OverDue_btn_HomeManagement = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)signoutButton).BeginInit();
             panel2.SuspendLayout();
@@ -73,6 +73,19 @@
             panel1.Size = new Size(277, 577);
             panel1.TabIndex = 0;
             // 
+            // OverDue_btn_HomeManagement
+            // 
+            OverDue_btn_HomeManagement.BackColor = Color.DarkSlateBlue;
+            OverDue_btn_HomeManagement.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            OverDue_btn_HomeManagement.ForeColor = SystemColors.ButtonHighlight;
+            OverDue_btn_HomeManagement.Location = new Point(12, 293);
+            OverDue_btn_HomeManagement.Name = "OverDue_btn_HomeManagement";
+            OverDue_btn_HomeManagement.Size = new Size(257, 55);
+            OverDue_btn_HomeManagement.TabIndex = 14;
+            OverDue_btn_HomeManagement.Text = "Over due Books";
+            OverDue_btn_HomeManagement.UseVisualStyleBackColor = false;
+            OverDue_btn_HomeManagement.Click += OverDue_btn_HomeManagement_Click;
+            // 
             // User_btn_HomeManagement
             // 
             User_btn_HomeManagement.BackColor = Color.DarkSlateBlue;
@@ -89,11 +102,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 49);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 48);
             label1.Name = "label1";
-            label1.Size = new Size(197, 20);
+            label1.Size = new Size(281, 28);
             label1.TabIndex = 12;
             label1.Text = "Library Management System";
+            label1.Click += label1_Click;
             // 
             // label5
             // 
@@ -171,18 +186,20 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(25, 64);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(5, 64);
             label4.Name = "label4";
-            label4.Size = new Size(109, 20);
+            label4.Size = new Size(153, 28);
             label4.TabIndex = 0;
             label4.Text = "Overdue Books";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(17, 64);
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(-1, 64);
             label6.Name = "label6";
-            label6.Size = new Size(118, 20);
+            label6.Size = new Size(166, 28);
             label6.TabIndex = 1;
             label6.Text = "Borrowed Books";
             // 
@@ -266,19 +283,6 @@
             label10.Size = new Size(168, 31);
             label10.TabIndex = 11;
             label10.Text = "Librarian Lists";
-            // 
-            // OverDue_btn_HomeManagement
-            // 
-            OverDue_btn_HomeManagement.BackColor = Color.DarkSlateBlue;
-            OverDue_btn_HomeManagement.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            OverDue_btn_HomeManagement.ForeColor = SystemColors.ButtonHighlight;
-            OverDue_btn_HomeManagement.Location = new Point(12, 293);
-            OverDue_btn_HomeManagement.Name = "OverDue_btn_HomeManagement";
-            OverDue_btn_HomeManagement.Size = new Size(257, 55);
-            OverDue_btn_HomeManagement.TabIndex = 14;
-            OverDue_btn_HomeManagement.Text = "Over due Books";
-            OverDue_btn_HomeManagement.UseVisualStyleBackColor = false;
-            OverDue_btn_HomeManagement.Click += OverDue_btn_HomeManagement_Click;
             // 
             // AdminDashBoard
             // 

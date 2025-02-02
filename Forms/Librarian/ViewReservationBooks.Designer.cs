@@ -43,16 +43,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(426, 40);
             label1.Name = "label1";
-            label1.Size = new Size(215, 29);
+            label1.Size = new Size(275, 41);
             label1.TabIndex = 2;
             label1.Text = "Reservation Books";
             // 
             // dataGridView_Reservations
             // 
+            dataGridView_Reservations.BackgroundColor = Color.White;
             dataGridView_Reservations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView_Reservations.Location = new Point(31, 90);
             dataGridView_Reservations.Margin = new Padding(3, 4, 3, 4);
@@ -65,29 +66,34 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.DarkSlateBlue;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
             button2.Location = new Point(440, 712);
             button2.Name = "button2";
             button2.Size = new Size(219, 62);
             button2.TabIndex = 42;
             button2.Text = "Confirm Reservation";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(651, 626);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(716, 626);
             label4.Name = "label4";
-            label4.Size = new Size(99, 20);
+            label4.Size = new Size(162, 31);
             label4.TabIndex = 41;
             label4.Text = "Collect Status";
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(791, 660);
+            radioButton2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            radioButton2.Location = new Point(894, 674);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(116, 24);
+            radioButton2.Size = new Size(180, 35);
             radioButton2.TabIndex = 40;
             radioButton2.TabStop = true;
             radioButton2.Text = "In the Library\r\n";
@@ -96,9 +102,10 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(665, 660);
+            radioButton1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            radioButton1.Location = new Point(716, 674);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(93, 24);
+            radioButton1.Size = new Size(135, 35);
             radioButton1.TabIndex = 39;
             radioButton1.TabStop = true;
             radioButton1.Text = "Collected";
@@ -107,9 +114,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.Location = new Point(200, 629);
             label3.Name = "label3";
-            label3.Size = new Size(56, 20);
+            label3.Size = new Size(94, 31);
             label3.TabIndex = 38;
             label3.Text = "Status :";
             // 
@@ -117,26 +125,30 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Confirmed", "Denied", "Pending" });
-            comboBox1.Location = new Point(291, 626);
+            comboBox1.Location = new Point(309, 632);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 37;
             // 
             // button1
             // 
+            button1.BackColor = Color.DarkSlateBlue;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(138, 34);
+            button1.Size = new Size(138, 38);
             button1.TabIndex = 43;
             button1.Text = "back";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // ViewReservationBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1133, 786);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(1393, 786);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(label4);

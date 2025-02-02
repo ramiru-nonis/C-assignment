@@ -16,19 +16,19 @@ namespace NewLibraryManagementApp.Forms.Admin
     {
         private Person person;
         private Form form;
-        
+
 
         private AdminController controller = new AdminController();
         public Library_Records(Person person, Form form)
         {
             InitializeComponent();
             this.person = person;
-            this.form = form;   
+            this.form = form;
         }
 
         private void libraryRecords_home_Click(object sender, EventArgs e)
         {
-            AdminDashBoard dashboard = new AdminDashBoard(person,this);
+            AdminDashBoard dashboard = new AdminDashBoard(person, this);
             dashboard.Show();
             this.Hide();
         }
@@ -43,10 +43,15 @@ namespace NewLibraryManagementApp.Forms.Admin
         private void Library_Records_Load(object sender, EventArgs e)
         {
             label4.Text = controller.GetMostActiveUser();
-            label6.Text =controller.GetMostBorrowedBook();
+            label6.Text = controller.GetMostBorrowedBook();
 
-            
+
             controller.DisplayTables(dataGridView_borrowings, dataGridViewReservations);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -48,11 +48,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(433, 32);
+            label1.Location = new Point(485, 32);
             label1.Name = "label1";
-            label1.Size = new Size(177, 29);
+            label1.Size = new Size(220, 41);
             label1.TabIndex = 1;
             label1.Text = "Remove Books";
             // 
@@ -61,7 +61,7 @@
             dataGridView_books.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView_books.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView_books.GridColor = SystemColors.HighlightText;
-            dataGridView_books.Location = new Point(454, 77);
+            dataGridView_books.Location = new Point(525, 77);
             dataGridView_books.Margin = new Padding(3, 4, 3, 4);
             dataGridView_books.Name = "dataGridView_books";
             dataGridView_books.RowHeadersWidth = 51;
@@ -73,33 +73,36 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(24, 297);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(16, 297);
             label4.Name = "label4";
-            label4.Size = new Size(94, 20);
+            label4.Size = new Size(151, 31);
             label4.TabIndex = 29;
             label4.Text = "Book Name :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 359);
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(16, 359);
             label2.Name = "label2";
-            label2.Size = new Size(99, 20);
+            label2.Size = new Size(161, 31);
             label2.TabIndex = 31;
             label2.Text = "Book Author :";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.Location = new Point(24, 420);
             label3.Name = "label3";
-            label3.Size = new Size(82, 20);
+            label3.Size = new Size(135, 31);
             label3.TabIndex = 33;
             label3.Text = "Book Year :";
             // 
             // bookisbn_text
             // 
-            bookisbn_text.Location = new Point(124, 490);
+            bookisbn_text.Location = new Point(191, 487);
             bookisbn_text.Margin = new Padding(3, 4, 3, 4);
             bookisbn_text.Name = "bookisbn_text";
             bookisbn_text.Size = new Size(295, 27);
@@ -108,15 +111,16 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.Location = new Point(24, 490);
             label5.Name = "label5";
-            label5.Size = new Size(86, 20);
+            label5.Size = new Size(138, 31);
             label5.TabIndex = 35;
             label5.Text = "Book ISBN :";
             // 
             // bookyear_text
             // 
-            bookyear_text.Location = new Point(124, 420);
+            bookyear_text.Location = new Point(191, 420);
             bookyear_text.Margin = new Padding(3, 4, 3, 4);
             bookyear_text.Name = "bookyear_text";
             bookyear_text.Size = new Size(295, 27);
@@ -124,7 +128,7 @@
             // 
             // bookauthor_text
             // 
-            bookauthor_text.Location = new Point(124, 359);
+            bookauthor_text.Location = new Point(191, 359);
             bookauthor_text.Margin = new Padding(3, 4, 3, 4);
             bookauthor_text.Name = "bookauthor_text";
             bookauthor_text.Size = new Size(295, 27);
@@ -132,7 +136,7 @@
             // 
             // bookname_text
             // 
-            bookname_text.Location = new Point(124, 297);
+            bookname_text.Location = new Point(191, 297);
             bookname_text.Margin = new Padding(3, 4, 3, 4);
             bookname_text.Name = "bookname_text";
             bookname_text.Size = new Size(295, 27);
@@ -141,6 +145,7 @@
             // removeBookbtn
             // 
             removeBookbtn.BackColor = Color.Red;
+            removeBookbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             removeBookbtn.ForeColor = SystemColors.ButtonFace;
             removeBookbtn.Location = new Point(681, 611);
             removeBookbtn.Name = "removeBookbtn";
@@ -152,17 +157,21 @@
             // 
             // backbutton
             // 
-            backbutton.Location = new Point(15, 18);
+            backbutton.BackColor = Color.DarkSlateBlue;
+            backbutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            backbutton.ForeColor = Color.White;
+            backbutton.Location = new Point(16, 12);
             backbutton.Name = "backbutton";
-            backbutton.Size = new Size(94, 29);
+            backbutton.Size = new Size(94, 36);
             backbutton.TabIndex = 39;
             backbutton.Text = "back";
-            backbutton.UseVisualStyleBackColor = true;
+            backbutton.UseVisualStyleBackColor = false;
             backbutton.Click += backbutton_Click;
             // 
             // bookpictureBox
             // 
-            bookpictureBox.Location = new Point(241, 77);
+            bookpictureBox.BackColor = Color.White;
+            bookpictureBox.Location = new Point(328, 77);
             bookpictureBox.Name = "bookpictureBox";
             bookpictureBox.Size = new Size(169, 194);
             bookpictureBox.TabIndex = 40;
@@ -172,8 +181,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1136, 760);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(1203, 760);
             Controls.Add(bookpictureBox);
             Controls.Add(backbutton);
             Controls.Add(removeBookbtn);

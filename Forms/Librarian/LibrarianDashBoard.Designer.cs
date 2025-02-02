@@ -58,9 +58,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(26, 70);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 78);
             label1.Name = "label1";
-            label1.Size = new Size(197, 20);
+            label1.Size = new Size(281, 28);
             label1.TabIndex = 12;
             label1.Text = "Library Management System";
             // 

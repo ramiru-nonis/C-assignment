@@ -72,9 +72,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(33, 49);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(0, 49);
             label2.Name = "label2";
-            label2.Size = new Size(197, 20);
+            label2.Size = new Size(281, 28);
             label2.TabIndex = 12;
             label2.Text = "Library Management System";
             // 
@@ -236,18 +237,21 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(414, 40);
+            label6.BackColor = SystemColors.Control;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(477, 28);
             label6.Name = "label6";
-            label6.Size = new Size(77, 20);
+            label6.Size = new Size(170, 41);
             label6.TabIndex = 10;
             label6.Text = "Labrarians";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(1085, 40);
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label7.Location = new Point(1061, 28);
             label7.Name = "label7";
-            label7.Size = new Size(60, 20);
+            label7.Size = new Size(126, 41);
             label7.TabIndex = 11;
             label7.Text = "Student";
             // 

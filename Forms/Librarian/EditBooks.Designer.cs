@@ -49,26 +49,30 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label7.Location = new Point(452, 9);
             label7.Name = "label7";
-            label7.Size = new Size(79, 20);
+            label7.Size = new Size(164, 41);
             label7.TabIndex = 28;
             label7.Text = "Edit Books";
             // 
             // savebutton
             // 
+            savebutton.BackColor = Color.DarkSlateBlue;
+            savebutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            savebutton.ForeColor = Color.White;
             savebutton.Location = new Point(692, 613);
             savebutton.Margin = new Padding(3, 4, 3, 4);
             savebutton.Name = "savebutton";
             savebutton.Size = new Size(123, 59);
             savebutton.TabIndex = 27;
             savebutton.Text = "Save ";
-            savebutton.UseVisualStyleBackColor = true;
+            savebutton.UseVisualStyleBackColor = false;
             savebutton.Click += savebutton_Click;
             // 
             // yeartextBox
             // 
-            yeartextBox.Location = new Point(156, 270);
+            yeartextBox.Location = new Point(187, 270);
             yeartextBox.Margin = new Padding(3, 4, 3, 4);
             yeartextBox.Name = "yeartextBox";
             yeartextBox.Size = new Size(249, 27);
@@ -76,7 +80,7 @@
             // 
             // authortextBox
             // 
-            authortextBox.Location = new Point(156, 208);
+            authortextBox.Location = new Point(187, 205);
             authortextBox.Margin = new Padding(3, 4, 3, 4);
             authortextBox.Name = "authortextBox";
             authortextBox.Size = new Size(249, 27);
@@ -85,24 +89,26 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 278);
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(12, 270);
             label6.Name = "label6";
-            label6.Size = new Size(44, 20);
+            label6.Size = new Size(75, 31);
             label6.TabIndex = 21;
             label6.Text = "Year :";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.Location = new Point(12, 205);
             label5.Name = "label5";
-            label5.Size = new Size(105, 20);
+            label5.Size = new Size(172, 31);
             label5.TabIndex = 20;
             label5.Text = "Author Name :";
             // 
             // titletextBox
             // 
-            titletextBox.Location = new Point(156, 128);
+            titletextBox.Location = new Point(187, 135);
             titletextBox.Margin = new Padding(3, 4, 3, 4);
             titletextBox.Name = "titletextBox";
             titletextBox.Size = new Size(249, 27);
@@ -111,24 +117,26 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 135);
             label1.Name = "label1";
-            label1.Size = new Size(88, 20);
+            label1.Size = new Size(144, 31);
             label1.TabIndex = 15;
             label1.Text = "Book Tittle :";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(12, 351);
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label8.Location = new Point(12, 338);
             label8.Name = "label8";
-            label8.Size = new Size(86, 20);
+            label8.Size = new Size(138, 31);
             label8.TabIndex = 29;
             label8.Text = "Book ISBN :";
             // 
             // isbntextBox
             // 
-            isbntextBox.Location = new Point(156, 344);
+            isbntextBox.Location = new Point(187, 338);
             isbntextBox.Margin = new Padding(3, 4, 3, 4);
             isbntextBox.Name = "isbntextBox";
             isbntextBox.Size = new Size(249, 27);
@@ -136,6 +144,7 @@
             // 
             // pictureBoxEdit
             // 
+            pictureBoxEdit.BackColor = Color.White;
             pictureBoxEdit.Location = new Point(12, 399);
             pictureBoxEdit.Name = "pictureBoxEdit";
             pictureBoxEdit.Size = new Size(209, 255);
@@ -144,9 +153,10 @@
             // 
             // backbtn
             // 
+            backbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             backbtn.Location = new Point(12, 12);
             backbtn.Name = "backbtn";
-            backbtn.Size = new Size(94, 29);
+            backbtn.Size = new Size(94, 38);
             backbtn.TabIndex = 32;
             backbtn.Text = "back";
             backbtn.UseVisualStyleBackColor = true;
@@ -154,6 +164,7 @@
             // 
             // dataGridView_editbooks
             // 
+            dataGridView_editbooks.BackgroundColor = SystemColors.GradientActiveCaption;
             dataGridView_editbooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView_editbooks.Location = new Point(532, 57);
             dataGridView_editbooks.Name = "dataGridView_editbooks";
@@ -164,18 +175,22 @@
             // 
             // uploadbtn
             // 
+            uploadbtn.BackColor = Color.DarkSlateBlue;
+            uploadbtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            uploadbtn.ForeColor = Color.White;
             uploadbtn.Location = new Point(276, 474);
             uploadbtn.Name = "uploadbtn";
-            uploadbtn.Size = new Size(138, 29);
+            uploadbtn.Size = new Size(164, 40);
             uploadbtn.TabIndex = 34;
             uploadbtn.Text = "Upload image";
-            uploadbtn.UseVisualStyleBackColor = true;
+            uploadbtn.UseVisualStyleBackColor = false;
             uploadbtn.Click += uploadbtn_Click;
             // 
             // EditBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MediumSlateBlue;
             ClientSize = new Size(1150, 700);
             Controls.Add(uploadbtn);
             Controls.Add(dataGridView_editbooks);

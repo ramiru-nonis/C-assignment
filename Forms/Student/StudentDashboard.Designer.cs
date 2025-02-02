@@ -57,9 +57,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(26, 70);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 66);
             label1.Name = "label1";
-            label1.Size = new Size(197, 20);
+            label1.Size = new Size(281, 28);
             label1.TabIndex = 12;
             label1.Text = "Library Management System";
             // 
@@ -97,7 +98,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(277, 577);
+            panel1.Size = new Size(277, 573);
             panel1.TabIndex = 7;
             // 
             // Overdues_btn_STdashboard
@@ -264,7 +265,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1117, 577);
+            ClientSize = new Size(1113, 573);
             Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(dataGridView_main);

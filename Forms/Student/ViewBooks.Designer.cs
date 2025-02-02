@@ -38,9 +38,10 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label7.Location = new Point(517, 22);
             label7.Name = "label7";
-            label7.Size = new Size(85, 20);
+            label7.Size = new Size(179, 41);
             label7.TabIndex = 15;
             label7.Text = "View Books";
             // 
@@ -59,31 +60,37 @@
             // 
             // back_button
             // 
+            back_button.BackColor = Color.DarkSlateBlue;
+            back_button.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            back_button.ForeColor = Color.White;
             back_button.Location = new Point(12, 13);
             back_button.Margin = new Padding(3, 4, 3, 4);
             back_button.Name = "back_button";
-            back_button.Size = new Size(104, 29);
+            back_button.Size = new Size(104, 42);
             back_button.TabIndex = 18;
             back_button.Text = "Back";
-            back_button.UseVisualStyleBackColor = true;
+            back_button.UseVisualStyleBackColor = false;
             back_button.Click += back_button_Click;
             // 
             // viewBookDetail_btn
             // 
-            viewBookDetail_btn.Location = new Point(912, 364);
+            viewBookDetail_btn.BackColor = Color.DarkSlateBlue;
+            viewBookDetail_btn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            viewBookDetail_btn.ForeColor = Color.White;
+            viewBookDetail_btn.Location = new Point(927, 364);
             viewBookDetail_btn.Name = "viewBookDetail_btn";
-            viewBookDetail_btn.Size = new Size(152, 29);
+            viewBookDetail_btn.Size = new Size(220, 40);
             viewBookDetail_btn.TabIndex = 19;
             viewBookDetail_btn.Text = "View Book Detail";
-            viewBookDetail_btn.UseVisualStyleBackColor = true;
+            viewBookDetail_btn.UseVisualStyleBackColor = false;
             viewBookDetail_btn.Click += viewBookDetail_btn_Click;
             // 
             // ViewBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1137, 666);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(1309, 730);
             Controls.Add(viewBookDetail_btn);
             Controls.Add(back_button);
             Controls.Add(dataGridView_viewBook);

@@ -36,16 +36,20 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.DarkSlateBlue;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(94, 39);
             button1.TabIndex = 0;
             button1.Text = "back";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // dataGridViewOverdue_student
             // 
+            dataGridViewOverdue_student.BackgroundColor = Color.White;
             dataGridViewOverdue_student.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewOverdue_student.Location = new Point(12, 81);
             dataGridViewOverdue_student.Margin = new Padding(3, 4, 3, 4);
@@ -58,11 +62,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(470, 39);
             label1.Name = "label1";
-            label1.Size = new Size(186, 29);
+            label1.Size = new Size(236, 41);
             label1.TabIndex = 45;
             label1.Text = "Over due Books";
             // 
@@ -70,7 +74,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1130, 655);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(1165, 670);
             Controls.Add(dataGridViewOverdue_student);
             Controls.Add(label1);
             Controls.Add(button1);

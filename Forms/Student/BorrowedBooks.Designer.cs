@@ -36,6 +36,7 @@
             // 
             // dataGridView_borrowedBooks
             // 
+            dataGridView_borrowedBooks.BackgroundColor = Color.White;
             dataGridView_borrowedBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView_borrowedBooks.Location = new Point(5, 55);
             dataGridView_borrowedBooks.Margin = new Padding(3, 4, 3, 4);
@@ -48,30 +49,34 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(440, 13);
             label1.Name = "label1";
-            label1.Size = new Size(193, 29);
+            label1.Size = new Size(244, 41);
             label1.TabIndex = 34;
             label1.Text = "Borrowed Books";
             // 
             // Backbutton_borrowBooks
             // 
-            Backbutton_borrowBooks.Location = new Point(12, 13);
+            Backbutton_borrowBooks.BackColor = Color.DarkSlateBlue;
+            Backbutton_borrowBooks.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Backbutton_borrowBooks.ForeColor = Color.White;
+            Backbutton_borrowBooks.Location = new Point(12, 6);
             Backbutton_borrowBooks.Margin = new Padding(3, 4, 3, 4);
             Backbutton_borrowBooks.Name = "Backbutton_borrowBooks";
-            Backbutton_borrowBooks.Size = new Size(104, 29);
+            Backbutton_borrowBooks.Size = new Size(104, 41);
             Backbutton_borrowBooks.TabIndex = 37;
             Backbutton_borrowBooks.Text = "Back";
-            Backbutton_borrowBooks.UseVisualStyleBackColor = true;
+            Backbutton_borrowBooks.UseVisualStyleBackColor = false;
             Backbutton_borrowBooks.Click += Backbutton_borrowBooks_Click;
             // 
             // BorrowedBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 655);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(1149, 651);
             Controls.Add(Backbutton_borrowBooks);
             Controls.Add(dataGridView_borrowedBooks);
             Controls.Add(label1);

@@ -15,8 +15,8 @@ namespace NewLibraryManagementApp
     public partial class Register : Form
     {
         private AdminController admin = new AdminController();
-        private LibrarianController librarian = new LibrarianController();  
-        private StudentController student = new StudentController();    
+        private LibrarianController librarian = new LibrarianController();
+        private StudentController student = new StudentController();
         public Register()
         {
             InitializeComponent();
@@ -64,7 +64,7 @@ namespace NewLibraryManagementApp
             }
             else
             {
-                if(role == "Admin")
+                if (role == "Admin")
                 {
                     admin.register(username, email, role, password, phoneNumber, this);
                 }
@@ -73,7 +73,7 @@ namespace NewLibraryManagementApp
 
                     librarian.register(username, email, role, password, phoneNumber, this);
                 }
-                else if(role == "Student")
+                else if (role == "Student")
                 {
                     student.register(username, email, role, password, phoneNumber, this);
                 }
@@ -83,7 +83,12 @@ namespace NewLibraryManagementApp
                     MessageBox.Show("Invalid Role");
                 }
             }
-            }
+        }
+
+        private void phonenumber_text_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
+}
 

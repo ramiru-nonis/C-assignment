@@ -27,7 +27,7 @@ namespace NewLibraryManagementApp.Forms.Admin
             this.person = p1;
 
         }
-        
+
 
 
 
@@ -92,9 +92,14 @@ namespace NewLibraryManagementApp.Forms.Admin
 
         private void OverDue_btn_HomeManagement_Click(object sender, EventArgs e)
         {
-            OverDueAdmin form = new OverDueAdmin(this,person);
-            form .Show();   
+            OverDueAdmin form = new OverDueAdmin(this, person);
+            form.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

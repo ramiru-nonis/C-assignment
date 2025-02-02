@@ -118,7 +118,88 @@ namespace NewLibraryManagementApp.Classes
             this.url = url;
         }
 
+        public bool ValidateAuthor(string author, out string validAuthor)
+        {
+            validAuthor = string.Empty;
 
+            // Check if the author name is empty or consists of only whitespace
+            if (string.IsNullOrWhiteSpace(author))
+            {
+                MessageBox.Show("Author name cannot be empty.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Trim input and check length
+            author = author.Trim();
+            if (author.Length < 2)
+            {
+                MessageBox.Show("Author name must be at least 2 characters long.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Ensure the author name contains only letters and spaces
+            if (!author.All(c => char.IsLetter(c) || c == ' '))
+            {
+                MessageBox.Show("Author name must only contain letters and spaces.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Validation passed
+            validAuthor = author;
+            return true;
+        }
+
+
+        public bool ValidateTitle(string title, out string validTitle)
+        {
+            validTitle = string.Empty;
+
+            // Check if the title is empty or consists of only whitespace
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Title cannot be empty.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Trim input and check length
+            title = title.Trim();
+            if (title.Length < 3)
+            {
+                MessageBox.Show("Title must be at least 3 characters long.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Validation passed
+            validTitle = title;
+            return true;
+        }
+
+
+        public bool ValidateISBN(string isbn, out string validISBN)
+        {
+            validISBN = string.Empty;
+
+            // Check if the ISBN is empty or consists of only whitespace
+            if (string.IsNullOrWhiteSpace(isbn))
+            {
+                MessageBox.Show("ISBN cannot be empty.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Trim input
+            isbn = isbn.Trim();
+
+            // Ensure ISBN contains only digits and is exactly 10 or 13 characters long
+            if (!(isbn.Length == 10 || isbn.Length == 13) || !isbn.All(char.IsDigit))
+            {
+                MessageBox.Show("Invalid ISBN. It must be exactly 10 or 13 digits.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Validation passed
+            validISBN = isbn;
+            return true;
+        }
 
         public bool ValidateYear(string input, out int year)
         {

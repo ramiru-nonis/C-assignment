@@ -40,27 +40,32 @@
             // 
             // updateOverdue
             // 
-            updateOverdue.Location = new Point(441, 602);
+            updateOverdue.BackColor = Color.DarkSlateBlue;
+            updateOverdue.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            updateOverdue.ForeColor = Color.White;
+            updateOverdue.Location = new Point(470, 602);
             updateOverdue.Name = "updateOverdue";
-            updateOverdue.Size = new Size(201, 29);
+            updateOverdue.Size = new Size(236, 41);
             updateOverdue.TabIndex = 47;
             updateOverdue.Text = "Update OverDue";
-            updateOverdue.UseVisualStyleBackColor = true;
+            updateOverdue.UseVisualStyleBackColor = false;
             updateOverdue.Click += updateOverdue_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.Location = new Point(189, 513);
             label3.Name = "label3";
-            label3.Size = new Size(56, 20);
+            label3.Size = new Size(121, 41);
             label3.TabIndex = 46;
             label3.Text = "Status :";
             // 
             // dataGridViewOverdue_admin
             // 
+            dataGridViewOverdue_admin.BackgroundColor = Color.White;
             dataGridViewOverdue_admin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOverdue_admin.Location = new Point(12, 65);
+            dataGridViewOverdue_admin.Location = new Point(12, 68);
             dataGridViewOverdue_admin.Margin = new Padding(3, 4, 3, 4);
             dataGridViewOverdue_admin.Name = "dataGridViewOverdue_admin";
             dataGridViewOverdue_admin.RowHeadersWidth = 51;
@@ -72,30 +77,34 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(470, 23);
             label1.Name = "label1";
-            label1.Size = new Size(186, 29);
+            label1.Size = new Size(236, 41);
             label1.TabIndex = 43;
             label1.Text = "Over due Books";
             // 
             // button
             // 
-            button.Location = new Point(25, 24);
+            button.BackColor = Color.MediumSlateBlue;
+            button.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button.ForeColor = Color.White;
+            button.Location = new Point(25, 22);
             button.Name = "button";
-            button.Size = new Size(94, 29);
+            button.Size = new Size(94, 37);
             button.TabIndex = 48;
             button.Text = "Back";
-            button.UseVisualStyleBackColor = true;
+            button.UseVisualStyleBackColor = false;
             button.Click += button_Click;
             // 
             // paidRadio
             // 
             paidRadio.AutoSize = true;
-            paidRadio.Location = new Point(270, 513);
+            paidRadio.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            paidRadio.Location = new Point(316, 513);
             paidRadio.Name = "paidRadio";
-            paidRadio.Size = new Size(58, 24);
+            paidRadio.Size = new Size(84, 35);
             paidRadio.TabIndex = 49;
             paidRadio.TabStop = true;
             paidRadio.Text = "Paid";
@@ -104,9 +113,10 @@
             // NotpaidRadio
             // 
             NotpaidRadio.AutoSize = true;
-            NotpaidRadio.Location = new Point(270, 552);
+            NotpaidRadio.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            NotpaidRadio.Location = new Point(316, 557);
             NotpaidRadio.Name = "NotpaidRadio";
-            NotpaidRadio.Size = new Size(87, 24);
+            NotpaidRadio.Size = new Size(130, 35);
             NotpaidRadio.TabIndex = 50;
             NotpaidRadio.TabStop = true;
             NotpaidRadio.Text = "Not Paid";
@@ -116,7 +126,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1130, 655);
+            BackColor = Color.MediumSlateBlue;
+            ClientSize = new Size(1128, 656);
             Controls.Add(NotpaidRadio);
             Controls.Add(paidRadio);
             Controls.Add(button);
