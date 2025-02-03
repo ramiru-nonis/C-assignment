@@ -99,7 +99,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(277, 577);
+            panel1.Size = new Size(277, 584);
             panel1.TabIndex = 7;
             // 
             // reservation_btn
@@ -271,7 +271,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1117, 577);
+            ClientSize = new Size(1120, 584);
             Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(Main_dataGridView);

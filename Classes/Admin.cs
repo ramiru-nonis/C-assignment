@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using library_mananagement_system.Forms.Librarian;
+using MySql.Data.MySqlClient;
 using NewLibraryManagementApp.Forms.Admin;
 using System;
 using System.Collections.Generic;
@@ -42,25 +43,18 @@ namespace NewLibraryManagementApp.Classes
         public override void Register(Person person, Form form)
         {
             bool isValidated = person.ValidateData();
-            bool iscredentialExist = person.isCredentialExist(person);
+            bool isCredentialExits = person.isCredentialExist(person);
             if (isValidated)
             {
-                if (iscredentialExist)
-                {
-                    MessageBox.Show("This user already exist");
-                }
-                else
+                if (isCredentialExits)
                 {
                     person.SaveData(person);
-                    AdminDashBoard a1 = new AdminDashBoard(person, form);
-                    a1.Show();
+                    AdminDashBoard dashboard = new AdminDashBoard(person, form);
+                    dashboard.Show();
                     form.Hide();
-                    MessageBox.Show("User Registered Successfully");
                 }
 
             }
-
-
         }
 
         // display the users to the data grid view

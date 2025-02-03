@@ -191,7 +191,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSlateBlue;
-            ClientSize = new Size(1150, 700);
+            ClientSize = new Size(1134, 700);
             Controls.Add(uploadbtn);
             Controls.Add(dataGridView_editbooks);
             Controls.Add(backbtn);

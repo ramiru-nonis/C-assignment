@@ -182,7 +182,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSlateBlue;
-            ClientSize = new Size(1203, 760);
+            ClientSize = new Size(1199, 760);
             Controls.Add(bookpictureBox);
             Controls.Add(backbutton);
             Controls.Add(removeBookbtn);

@@ -40,12 +40,17 @@ namespace NewLibraryManagementApp
 
         private void dataGridView_reserveBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0)
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow selectedRow = dataGridView_reserveBooks.Rows[e.RowIndex];
                 textBox5.Text = selectedRow.Cells["Title"].Value.ToString();
                 textBox3.Text = selectedRow.Cells["Author"].Value.ToString();
             }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

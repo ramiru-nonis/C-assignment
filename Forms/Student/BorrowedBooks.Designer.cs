@@ -76,7 +76,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSlateBlue;
-            ClientSize = new Size(1149, 651);
+            ClientSize = new Size(1141, 655);
             Controls.Add(Backbutton_borrowBooks);
             Controls.Add(dataGridView_borrowedBooks);
             Controls.Add(label1);

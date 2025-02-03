@@ -174,7 +174,7 @@ namespace NewLibraryManagementApp.Classes
             }
 
         }
-        public bool ReturnBook(int borrowedId, DateTime returnDate)
+        public bool ReturnBook(int borrowedId)
         {
             string selectQuery = "SELECT UserId, BookId, DueDate FROM borrowed_records WHERE BorrowedId = @BorrowedId";
             string updateQuery = "UPDATE borrowed_records SET IsReturned = 1, ReturnedDate = @ReturnDate WHERE BorrowedId = @BorrowedId";
@@ -191,7 +191,7 @@ namespace NewLibraryManagementApp.Classes
                 {
                     DateTime dueDate;
                     int userId, bookId;
-                    //DateTime returnDate = DateTime.Now;
+                    DateTime returnDate = DateTime.Now;
 
                     // Step 1: Get UserID, BookID, and DueDate (inside transaction)
                     using (MySqlCommand selectCommand = new MySqlCommand(selectQuery, connection, transaction))

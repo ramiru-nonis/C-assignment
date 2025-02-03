@@ -181,7 +181,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSlateBlue;
-            ClientSize = new Size(1136, 665);
+            ClientSize = new Size(1131, 717);
             Controls.Add(button);
             Controls.Add(year_text);
             Controls.Add(uploadImageBtn);

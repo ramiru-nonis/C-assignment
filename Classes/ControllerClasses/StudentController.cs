@@ -42,9 +42,9 @@ namespace NewLibraryManagementApp.Classes.ControllerClasses
         {
             student.LoadReservedBooks(person, data);
         }
-        public void ReturnBook(Person person,int bookId,DateTime returnDate,DataGridView grid)
+        public void ReturnBook(Person person,int bookId,DataGridView grid)
         {
-            bool isReturned = student.ReturnBook(bookId, returnDate);
+            bool isReturned = student.ReturnBook(bookId);
             if(isReturned)
             {
                 LoadBorrrowedBooks(person,grid);

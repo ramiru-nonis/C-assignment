@@ -37,6 +37,9 @@ namespace library_mananagement_system.Forms.Librarian
 
         private void StudentDashboard_Load(object sender, EventArgs e)
         {
+            
+            
+            
             label3.Text = $"{person.Name},";
             controller.LoadBorrrowedBooks(person, dataGridView_main);
             totalBorrowedBooks.Text = controller.GetTotalBorrowedBooks(person);

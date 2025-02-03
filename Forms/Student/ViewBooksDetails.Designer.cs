@@ -192,7 +192,7 @@
             status_text.AutoSize = true;
             status_text.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             status_text.ForeColor = Color.Black;
-            status_text.Location = new Point(713, 564);
+            status_text.Location = new Point(699, 564);
             status_text.Name = "status_text";
             status_text.Size = new Size(163, 31);
             status_text.TabIndex = 56;
@@ -203,7 +203,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSlateBlue;
-            ClientSize = new Size(1194, 775);
+            ClientSize = new Size(1139, 775);
             Controls.Add(status_text);
             Controls.Add(label3);
             Controls.Add(back_btn_bookDetails);

@@ -57,7 +57,7 @@ namespace NewLibraryManagementApp
             string phoneNumber = phonenumber_text.Text;
             string password = password_text.Text;
             string role = Admin_radio_register.Checked ? "Admin" : Librarian_radio_Register.Checked ? "Librarian" : Student_radio_register.Checked ? "Student" : "User";
-
+            string adminCode = AdminCode_textBox.Text;
             if (username == "" || email == "" || phoneNumber == "" || password == "" || role == "")
             {
                 MessageBox.Show("Please fill all the fields");
@@ -66,7 +66,15 @@ namespace NewLibraryManagementApp
             {
                 if (role == "Admin")
                 {
-                    admin.register(username, email, role, password, phoneNumber, this);
+                    if(adminCode == "Admin123") 
+                    {
+                        admin.register(username, email, role, password, phoneNumber, this);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Admin Code","Access Denied",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    }
                 }
                 else if (role == "Librarian")
                 {

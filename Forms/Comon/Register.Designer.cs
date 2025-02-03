@@ -44,6 +44,8 @@
             Librarian_radio_Register = new RadioButton();
             Admin_radio_register = new RadioButton();
             label7 = new Label();
+            AdminCode_textBox = new TextBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -215,12 +217,31 @@
             label7.TabIndex = 18;
             label7.Text = "What is your Role ?";
             // 
+            // AdminCode_textBox
+            // 
+            AdminCode_textBox.Location = new Point(388, 299);
+            AdminCode_textBox.Name = "AdminCode_textBox";
+            AdminCode_textBox.Size = new Size(180, 27);
+            AdminCode_textBox.TabIndex = 19;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label8.Location = new Point(214, 295);
+            label8.Name = "label8";
+            label8.Size = new Size(158, 31);
+            label8.TabIndex = 20;
+            label8.Text = "Admin Code :";
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSlateBlue;
             ClientSize = new Size(796, 562);
+            Controls.Add(label8);
+            Controls.Add(AdminCode_textBox);
             Controls.Add(label7);
             Controls.Add(Student_radio_register);
             Controls.Add(Librarian_radio_Register);
@@ -263,5 +284,7 @@
         private RadioButton Librarian_radio_Register;
         private RadioButton Admin_radio_register;
         private Label label7;
+        private TextBox AdminCode_textBox;
+        private Label label8;
     }
 }
